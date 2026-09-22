@@ -1,0 +1,49 @@
+/* Контейнер меню — прижимаем вправо */
+.menu {
+    float: right;
+    width: 220px;
+    position: fixed;       /* прибито к экрану */
+    top: 10px;             /* отступ сверху */
+    right: 10px;           /* отступ справа */
+    background-color: #f0f8f8;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 90vh;      /* не вылезает за экран */
+    overflow-y: auto;      /* прокрутка внутри, если ссылок много */
+}
+
+.menu img {
+    width: 100%;        /* растянуть по ширине меню */
+    height: auto;       /* сохранить пропорции */
+    margin-top: 0px;   /* отступ сверху */
+    border-radius: 6px; /* скруглённые углы (по желанию) */
+}
+
+.menu h3 {
+    margin-top: 0;
+    color: darkslategray;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Контейнер контента */
+.content {
+    margin-right: 260px;   /* освобождаем место справа под меню */
+}
